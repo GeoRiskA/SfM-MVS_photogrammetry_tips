@@ -33,12 +33,12 @@ Hence, it is considered here that the image acquisition has been performed prope
 Figures 1 and 2 show the main GUI of Metashape pro, with the location of the main menus, toolbars and tabs. These figures help to understand the procedures described in this user guide.
 
 
-![Figure 1](https://github.com/GeoRiskA/SfM-MVS_photogrammetry_tips/blob/main/Figures/AMP_GUI1_labeled.png)
-*Figure 1 — Main Graphical User Interface (GUI) of Metashape Pro (Part 1)*  
+<img src="https://github.com/GeoRiskA/SfM-MVS_photogrammetry_tips/blob/main/Figures/AMP_GUI1_labeled.png" width=600>
+<p><b>Figure 1 — Main Graphical User Interface (GUI) of Metashape Pro (Part 1)</b></p>    
    
-   
-![Figure 2](https://github.com/GeoRiskA/SfM-MVS_photogrammetry_tips/blob/main/Figures/AMP_GUI2_labeled.png)
-*Figure 2 — Main Graphical User Interface (GUI) of Metashape Pro (Part 2)*   
+<img src="https://github.com/GeoRiskA/SfM-MVS_photogrammetry_tips/blob/main/Figures/AMP_GUI2_labeled.png" width=600>
+<p><b>Figure 2 — Main Graphical User Interface (GUI) of Metashape Pro (Part 2)</b></p>    
+
 
 ## 1. Image preparation
 
