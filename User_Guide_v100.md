@@ -128,6 +128,15 @@ High reprojection error usually indicates poor localization accuracy of the corr
 This is a complex metric that reflects how elongate the precision ellipse is on any point. More precisely, reconstruction uncertainty is ratio of the largest semi-axis to the smallest semi-axis of the error ellipse of the triangulated 3D point coordinates. The error ellipse corresponds to the uncertainty of the point triangulation alone without taking into account propagation of uncertainties from interior and exterior orientation parameters. Large values indicate elongated ellipses (for UAV surveys, this usually indicates luch weaker vertical precision than horizontal precision). Appropriate values to use as thresholds will vary between projects, and will depend on the number of images matched per point and the imaging geometry.  
 
 ***Projection accuracy***  
+It corresponds to the average image scale that was used for measuring coordinates of the projections of the tie-point. This criterion allows to filter out points which projections were relatively poorer localized due to their "bigger size" (matching at different scales between images).  
+
+It is suggested to use the filters in the order presented here.
+
+Once the filtering is performed properly, the interior and exterior orientations can be optimized using the star button in the reference frame (Fig. 2). Camera optimization can be performed only once, after both georeferencing and tie point filtering.
+
+Keep in mind that overfiltering can lead to worst results! To avoid that, avoid filtering that removes significant parts of the tie points within the area of interest. If you see a systematic pattern of point selection (e.g., circular selection keeping points in the corners of images), it is probably overfiltering. Try to prefer filtering that more or less select an homogeneous distribution of points.
+
+In any case, do not be afraid to remove the majority of tie points, as long as there are still a good distribution of points within your area of interest.
 
 
 ## 5. Final Products
