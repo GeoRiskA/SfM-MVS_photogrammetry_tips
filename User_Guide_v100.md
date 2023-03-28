@@ -96,18 +96,38 @@ The first approach is straightforward and performed automatically by the softwar
 - The image positions are homogenously distributed in space, both horizontally and vertically. Having image acquisitions solely in a same plane will significantly decrease the georeferencing precision in one dimension.
 - The camera position is accurate thanks to a positionning performed with a differential GNSS method, either in real-time (i.e., Real-Time Kinematic or "RTK") or in post-processing (i.e., Post-Processing Kinematic or "PPK").
 
-The second approach requires the measurement of GCPs on the field, using a proper geodetic equipment (i.e., differential GNSS or EDM). The same conditions for accurate georeferencing apply:  
+The second approach requires the measurement of GCPs (markers) on the field, using a proper geodetic equipment (i.e., differential GNSS or EDM). The same conditions for accurate georeferencing apply:  
 - The GCPs are homogeneously distributed within and ideally around the region of interest.
 - The position of the GCPs was measured using a differential GNSS equipment.
 
+When the geotagging of the images is used for the georeferencing, the coordinates of the photos can be observed in the camera geolocation frame (Fig. 2). The mean camera position error (in metres) is visible in bold, below the column "Error (m)". This error represents the variability between the camera positions when used for georeferencing. It does not represent the mean accuracy of measurement of each camera position, which is rather around 10 metres without differential correction.  
 
+When GCPs are used for the georeferencing, their name and coordinates can be either inserted manually or automatically using `File > Import > Import Markers...`. In both cases, their position in the images must be set manually on each image showing the GCP. This is why there are two types of accuracy to specify in reference settings: "Measurement accuracy" (= GCP position measurement in the field) and "image coordinate accuracy" (= GCP position in the images). Measurement accuracy will be expressed in metres. Image coordinate accuracy will be expressed in pixels. The default values must be adapted according to the quality of your georeferencing data.
 
+Before applying the georeferencing, there are two steps to perform:  
 
+(1) Make sure that you selected the proper coordinate system(s) in Reference Settings: Go to the Reference frame (Fig. 2) and select the "Settings" symbol (tools icon). Specify the correct coordinate system. If the coordinates of the photos or those of the GCPs (markers) are different from the final coordinate system you would like to use, you can specify it in these settings. Adapt the accuracy values and click "OK" to validate.  
 
+(2) Make sure you selected the images and GCPs you would like to use for georeferencing. Unticked images and GCPs in the corresponding frames (see Fig. 2) will not be taken into account for the georeferencing.
+
+Once you are ready for the georeferencing, you can click on the button "Update Transform" (circle of arrows) in the toolbar of the reference frame (Fig. 2).  
 
 ## 4. Optimization of the interior and exterior orientations
 
+If you would like the georeferencing to be taken into account for the calculation of interior and exterior orientations, you have to click on "Optimize Cameras" symbol (star icon in the toolbar of the reference frame). To perform camera optimization, it is best to select the "Adaptive Camera Model Fitting" and "Calculate covariance" options.  
 
+The interior and exterior orientations can also be improve through the filtering of the tie points (i.e., the SPC). This can be done with the tools provided in `Model > Gradual Selection...`. There are several filters available:
+
+***Image count***  
+If you have a good dataset with a lot of overlap between photos, it is best to start with "Image count". Select all tie points visible on two images and erase them using the "Delete Selection" button in the main upper toolbar. If this filter removes significant parts of your area of interest, you may consider not using this filtering option.
+
+***Reprojection Error***  
+High reprojection error usually indicates poor localization accuracy of the corresponding point projections at the point matching step. The values ae normalised and without specific unit. It is also typical for false matches. Removing such points can improve accuracy of the subsequent optimization step. If youre dataset is of good quality, you should be able to set a threshold below 1 without overfiltering the tie points.
+
+***Reconstruction uncertainty***  
+This is a complex metric that reflects how elongate the precision ellipse is on any point. More precisely, reconstruction uncertainty is ratio of the largest semi-axis to the smallest semi-axis of the error ellipse of the triangulated 3D point coordinates. The error ellipse corresponds to the uncertainty of the point triangulation alone without taking into account propagation of uncertainties from interior and exterior orientation parameters. Large values indicate elongated ellipses (for UAV surveys, this usually indicates luch weaker vertical precision than horizontal precision). Appropriate values to use as thresholds will vary between projects, and will depend on the number of images matched per point and the imaging geometry.  
+
+***Projection accuracy***  
 
 
 ## 5. Final Products
