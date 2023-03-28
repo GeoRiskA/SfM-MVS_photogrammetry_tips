@@ -130,24 +130,40 @@ This is a complex metric that reflects how elongate the precision ellipse is on 
 ***Projection accuracy***  
 It corresponds to the average image scale that was used for measuring coordinates of the projections of the tie-point. This criterion allows to filter out points which projections were relatively poorer localized due to their "bigger size" (matching at different scales between images).  
 
-It is suggested to use the filters in the order presented here.
+It is suggested to use the filters in the order presented here.  
 
-Once the filtering is performed properly, the interior and exterior orientations can be optimized using the star button in the reference frame (Fig. 2). Camera optimization can be performed only once, after both georeferencing and tie point filtering.
+Once the filtering is performed properly, the interior and exterior orientations can be optimized using the star button in the reference frame (Fig. 2). Camera optimization can be performed only once, after both georeferencing and tie point filtering.  
 
-Keep in mind that overfiltering can lead to worst results! To avoid that, avoid filtering that removes significant parts of the tie points within the area of interest. If you see a systematic pattern of point selection (e.g., circular selection keeping points in the corners of images), it is probably overfiltering. Try to prefer filtering that more or less select an homogeneous distribution of points.
+Keep in mind that overfiltering can lead to worst results! To avoid that, avoid filtering that removes significant parts of the tie points within the area of interest. If you see a systematic pattern of point selection (e.g., circular selection keeping points in the corners of images), it is probably overfiltering. Try to prefer filtering that more or less select an homogeneous distribution of points.  
 
-In any case, do not be afraid to remove the majority of tie points, as long as there are still a good distribution of points within your area of interest.
+In any case, do not be afraid to remove the majority of tie points, as long as there are still a good distribution of points within your area of interest.  
 
 
 ## 5. Final Products
 
+Once you have optimized interior and exterior orientations and a georeferenced sparse point cloud, you are ready to produce the final 3D products. The first raw result will be a dense point cloud (DPC), from which a mesh or a digital elevation model (DEM) can be derived. Once a DEM is produced, it is possible to produce an orthophoto mosaic or "orthomosaic".
 
+But before any processing, it is best to ensure that the bounding box surrounding the SPC (box delineated by gray lines) has the proper dimensions (dense matching will only apply for what is within this box) and is properly oriented with the coordinate system. To do that, you can use the python script provided in the repository, by loading it on `Tools > Run Scripts...`.  
 
+#### 5.1 Dense matching  
+
+To perform dense matching, go to `Workflow > Build Point Cloud...`. A small window will open. Select the following criteria:  
+- Quality: Never use "Highest" and select either "High" or "Medium".  
+- Depth Filtering: always select "Aggressive".  
+- Other options: you can calculate the point colour and the point confidence. Untick these options if you don't need this information and if you would like to speed-up the processing.  
+
+Dense matching is the most demanding processing step for the computer. Reducing the quality selection and reducing the size of the boudning box will reduce the computer needs for the calculation and, hence, the time needed to perform this step.
+
+#### 5.2 DEM production  
+
+To create a DEM, go to `Workflow > Build DEM...`. The spatial resolution cannot be modified and will be adapted depending on the point density of the DPC (will depend on the "quality" selected during dense matching). Select the proper coordinate system and the DPC as source data.
+
+Interpolation is enabled by default. This option is useful for small holes within the DPC. If there are large holes in the DPC, the interpolation will lead to bad interpolation. If this is the case, the best option is to keep the interpolation enabled and mask the large interpolation areas afterwards, e.g. within QGIS.
 
 
 ## Further references
 
-
+In progress...
 
 -------
 ***(c) B. Smets - Vrije Universiteit Brussel / Royal Museum for Central Africa, 2023***  
