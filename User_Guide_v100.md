@@ -90,13 +90,17 @@ To see the quality of the tie point positonning, it is possible to calculate a v
 ## 3. Georeferencing
 
 
-The georeferencing of the 3D reconstruction can be performed in two ways: (1) using geotagged photos, and (2) using ground control points (GCPs).
+The georeferencing of the 3D reconstruction can be performed in two ways: (1) using geotagged photos, and (2) using ground control points (GCPs). If there is no georeferencing information available, a solution is to use a reference dataset and co-align the data to it (approach not described here).
 
 The first approach is straightforward and performed automatically by the software, if it is able to properly read the image metadata. This georeferencing methods is accurate when the two following conditions are met:
 - The image positions are homogenously distributed in space, both horizontally and vertically. Having image acquisitions solely in a same plane will significantly decrease the georeferencing precision in one dimension.
 - The camera position is accurate thanks to a positionning performed with a differential GNSS method, either in real-time (i.e., Real-Time Kinematic or "RTK") or in post-processing (i.e., Post-Processing Kinematic or "PPK").
 
-The second approach requires the measurement of GCPs on the field, using a proper geodetic equipment (i.e., differential GNSS or EDM).
+The second approach requires the measurement of GCPs on the field, using a proper geodetic equipment (i.e., differential GNSS or EDM). The same conditions for accurate georeferencing apply:  
+- The GCPs are homogeneously distributed within and ideally around the region of interest.
+- The position of the GCPs was measured using a differential GNSS equipment.
+
+
 
 
 
