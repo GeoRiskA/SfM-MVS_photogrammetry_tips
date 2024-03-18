@@ -18,16 +18,15 @@
 # Earth Surface Processes and Landforms 42, 1769–1788
 # https://doi.org/10.1002/esp.4125
 #
-# Maintained updated since v. 140 by:
+# If used, please cite the above publication reference in your work!
+#
+# Maintained  and updated since v.140 by:
 #     Benoît Smets
 #     Royal Museum for Central Africa / Vrije Unversiteit Brussel (Belgium)
 #
 # With the support of:
 #     - Silke Calcoen (MSc student, VUB/KULeuven, June 2023)
 #     - Louise Delhaye (PhD researcher, VUB/RMCA, August 2020)
-
-# Usage:            Open the script file in Metashape Pro
-#                   --> In the main menu bar: Tools > Run Scripts...
 #
 # Important Note:   Please follow the instructions here below!
 #-----------------------------------------------------------------------------------------------------------------
@@ -70,7 +69,7 @@
 #                 - The workspace must be saved as a .psz file
 #                 - The coordinate system(s) must be properly specified
 #
-# Use:        1) Create of specific folder where to store the results of the precision estimate.
+# Usage:      1) Create of specific folder where to store the results of the precision estimate.
 #             2) Open the script in a text editor and modify the hard-coded SETUP section according to the
 #                processing you would like to perform. A good practice is to save the python script with a
 #                personalised name, so you keep track of the parameters you selected for the precision
