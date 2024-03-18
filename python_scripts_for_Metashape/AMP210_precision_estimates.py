@@ -77,7 +77,7 @@
 #             3) Run the script. For this, go to the main menu bar and select "Tools > Run Script...".
 #             4) Once finished, you only have the results of the iterations. You have to compute the statistics
 #                out of that. To do so, you have to use SfM_georef (http://tinyurl.com/sfmgeoref). Please, read
-#                the user guide of SfM_georef (Section 10, from p. 14) to proprely perform the precision analysis.
+#                the user guide of SfM_georef (Section 10, from p. 14) to properly perform the precision analysis.
 #
 # UPDATE LOG:
 #============
