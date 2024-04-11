@@ -21,10 +21,10 @@
 ################################################################################
 
 # Name of the chunk to duplicate
-chunk_name = "Test_name1"
+chunk_name = "Your_chunk_name"
 
 # Number of duplication to perform
-number = 3
+number = 10
 
 ###############################   END OF SETUP   ###############################
 ################################################################################
