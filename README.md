@@ -15,7 +15,7 @@ This repository is still in construction. The information currently available is
 
 ## 1. Metashape Pro user guide
 
-Agisoft Metashape Pro (AMP) is amongst the best SfM-MVS photogrammetry software in the market. Although expensive (~3500 $/€ for the pro version), there is a more effordable price for researchers with the Educational Licence (~550 $/€). Each new version of the software comes with new tools and options, but the main workflow remains the same. In the user guide proposed here, in markdown format, you will find a description on how to process of set of images to create a dense point cloud, a digital elevation model (DEM) and an orthomosaic, using this main workflow.  
+Agisoft Metashape Pro (AMP) is amongst the best SfM-MVS photogrammetry software in the market. Although expensive (~3500$ for the pro version), there is a more effordable price for researchers with the Educational Licence (~550$). Each new version of the software comes with new tools and options, but the main workflow remains the same. In the user guide proposed here, in markdown format, you will find a description on how to process of set of images to create a dense point cloud, a digital elevation model (DEM) and an orthomosaic, using this main workflow.  
 
 The user guide is progressively updated with additional tips and figures to make it more detailed and easy to use. However, the optional processing steps that could be done (e.g., image colour correction) or the post-processing and analysis tools (e.g., point cloud classification) are not detailed here. These options might be described in the future through tutorials.  
 
