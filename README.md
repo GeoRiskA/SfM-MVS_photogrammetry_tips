@@ -9,7 +9,8 @@ This repository is still in construction. The information currently available is
 
 1. Metashape Pro user guide
 2. Python scripts for Metashape Pro
-3. *Video tutorials (not available yet)*
+3. Useful shell scripts to manage or pre-process (UAV) imagery
+4. *Video tutorials (not available yet)*
 
 ----------
 
@@ -39,6 +40,19 @@ The scripts currently available are:
 Other Python scripts for Metashape Pro are directly available on [the GitHub account of Agisoft](https://github.com/agisoft-llc/metashape-scripts). Here is a selection of useful scripts (currently only one) with the link to the repository of Agisoft:   
 
 - **Split in Chunks:** Script that takes your chunk and split it into tiles, based on a user-defined grid (number columns and rows). Additional options are also available, such as performing the dense matching for each tile of the grid, and merging the results back into a single chunk. The script is classically launched using `Tools > Run Script...`. This action opens a new graphical user interface (GUI) in which the parameters and options can be selected by the user. [--> LINK](https://github.com/agisoft-llc/metashape-scripts/blob/master/src/split_in_chunks_dialog.py)  
+
+
+----------
+
+## 3. Useful shell scripts to manage or pre-process (UAV) imagery
+
+In progress...
+
+----------
+
+## 4. Video tutorials
+
+In progress...
 
 ----------
 ***(c) Benoît Smets, Royal Museum for Central Africa / Vrije Universiteit Brussel, 2023-2024***  
