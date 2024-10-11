@@ -16,10 +16,12 @@
    - On MacOS: `sudo open .zshrc`  
 4) Add the following line:  
    `export PATH="/path/to/my/callable/script_folder:$PATH"`  
-   *(Change the path with the one of your script folder)*
+   *(Change the path with the one of your script folder)*  
+5) Check the shebang of your script(s)  
+   —> `#!/bin/bash` if it is bash,  `#!/bin/zsh` if it is zsh  
 
-### Usage:
-- Open a terminal
-- Run the script with the necessary arguments.
+### Usage:  
+- Open a terminal  
+- Run the script with the necessary arguments.  
 
 ---------
