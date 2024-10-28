@@ -1,9 +1,9 @@
-cff-version: 1.1.0
+cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
 - family-names: Benoît
   given-names: Smets
-orcid: https://orcid.org/0000-0002-1044-8314
+  orcid: https://orcid.org/0000-0002-1044-8314
 title:GeoRiskA/SfM-MVS_photogrammetry_tips: Release of Version 1.0.1 (October 2024)
 version: v1.0.1
 date-released: 2024-10-28
