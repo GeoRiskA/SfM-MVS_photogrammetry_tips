@@ -11,7 +11,8 @@
 
 This repository is in continuous progress. The information available improves with time, through new releases.
 
-**Citation:** Smets, Benoît (2024). SfM-MVS photogrammetry tips, v.1.0.1. DOI: 10.5281/zenodo.14001860.
+**Author:** Benoît SMETS – Royal Museum for Central Africa / Vrije Universiteit Brussel (Belgium)  
+**Citation:** `Smets, B. (2024). SfM-MVS photogrammetry tips, v.1.0.1. DOI: 10.5281/zenodo.14001860`
 
 ## TABLE OF CONTENT  
 
