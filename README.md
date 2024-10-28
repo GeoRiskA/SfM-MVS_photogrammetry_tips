@@ -1,6 +1,6 @@
 # SfM-MVS photogrammetry tips
-*Version 1.0.0*  
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)  
+*Version 1.0.1*   
+[![DOI](https://zenodo.org/badge/579902321.svg)](https://doi.org/10.5281/zenodo.14001859) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)  
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)   
 
@@ -10,6 +10,8 @@
 **This repository provides useful explanations, references, links and scripts to help you perform Structure-from-Motion Mutli-View Stereo (SfM-MVS) photogrammetry with the software [Agisoft Metashape Pro](https://www.agisoft.com/).**  
 
 This repository is in continuous progress. The information available improves with time, through new releases.
+
+**Citation:** Smets, Benoît (2024). SfM-MVS photogrammetry tips, v.1.0.1. DOI: 10.5281/zenodo.14001860.
 
 ## TABLE OF CONTENT  
 
