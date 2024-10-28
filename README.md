@@ -13,7 +13,8 @@ This repository is still in construction. The information currently available is
 1. Metashape Pro user guide
 2. Python scripts for Metashape Pro
 3. Useful shell scripts to manage or pre-process (UAV) imagery
-4. *Video tutorials (not available yet)*
+4. *Video tutorials in English (not available yet)*
+5. *Video tutorials in French (not available yet)*  
 
 ----------
 
@@ -53,13 +54,28 @@ Other Python scripts for Metashape Pro are directly available on [the GitHub acc
 
 ## 3. Useful shell scripts to manage or pre-process (UAV) imagery
 
-In progress...
+In the folder [Useful_shell_scripts](https://github.com/GeoRiskA/SfM-MVS_photogrammetry_tips/tree/main/Useful_shell_scripts), you will find shell scripts that are useful to manage or pre-process the imagery that will be used for photogrammetry. These scripts can be stored on your computer, in a folder that can be added to the environmental paths. The scripts can, then, be called in a terminal, with the required arguments to perform the processing. There currently is only one shell script available, but more scripts will follow in the future. Go to the [shell script folder](https://github.com/GeoRiskA/SfM-MVS_photogrammetry_tips/tree/main/Useful_shell_scripts) for further instructions!
+
+- **Sort_M3M_MS_bands.sh:** This script is dedicated to sort geotiff files per spectral band, byt moving them to folders having the name of the corresponding spectral band. The script has been specifically developed for the mutltispectral camera of the DJI Mavic 3 Multispectral (M3M) quadcopter.
+
 
 ----------
 
-## 4. Video tutorials
+## 4. Video tutorials in English
+
+These video tutorials were initially developed in the frame of the course "Remote Sensing of the Environment", in the frame of the Master of Geography of the Vrije Universiteit Brussel (VUB) and Katholiek Universiteit Leuven (KULeuven), in Belgium.
 
 In progress...
+
+
+----------
+
+## 5. Video tutorials in French
+
+These video tutorials are French replicates of the tutorials in English. They primarily target the French-speaking African partners working with the Vrije Universiteit Brussel (VUB) and the Royal Museum for Central Africa (RMCA), in Belgium.
+
+In progress...
+
 
 ----------
 ***(c) Benoît Smets, Royal Museum for Central Africa / Vrije Universiteit Brussel, 2023-2024***  
