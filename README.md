@@ -1,12 +1,15 @@
 # SfM-MVS photogrammetry tips
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)   
+*Version 1.0.0*  
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)  
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)   
+
 
 -------------
 
 **This repository provides useful explanations, references, links and scripts to help you perform Structure-from-Motion Mutli-View Stereo (SfM-MVS) photogrammetry with the software [Agisoft Metashape Pro](https://www.agisoft.com/).**  
 
-This repository is still in construction. The information currently available is limited to a first version of a user guide and few Python scripts to perform specific processing steps with Metashape Pro.
+This repository is in continuous progress. The information available improves with time, through new releases.
 
 ## TABLE OF CONTENT  
 
