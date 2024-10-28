@@ -4,6 +4,8 @@ authors:
 - family-names: Benoît
   given-names: Smets
   orcid: https://orcid.org/0000-0002-1044-8314
-title:GeoRiskA/SfM-MVS_photogrammetry_tips: Release of Version 1.0.1 (October 2024)
-version: v1.0.1
+title: "GeoRiskA/SfM-MVS_photogrammetry_tips"
+version: 1.0.1
+doi: 10.5281/zenodo.14001860
 date-released: 2024-10-28
+url: "https://github.com/GeoRiskA/SfM-MVS_photogrammetry_tips"
